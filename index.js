@@ -3,7 +3,7 @@ const BitX = require('bitx')
 const fs = require('fs')
 var dateFormat = require('dateformat');
 var bitx = new BitX()
-// const express =
+const express = require('express')
 const plotter = require('./helper/plotter.js')
 
 //Shared vars
@@ -110,8 +110,11 @@ var step_before_sell = -1; //random number, just for set in sudden growth min_st
  bitfinex trade_risk = 0.001,  fee = 0.2; 0.898728516, trade 672
  bitfinex trade_risk = 0.005,  fee = 0.2; 1.1501926111680123, trade: 400
  */
+
 var router = express();
 var server = http.createServer(router);
+router.use(express.static(path.resolve(__dirname, 'client')));
+
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
     var addr = server.address();
     console.log("Chat server listening at", addr.address + ":" + addr.port);

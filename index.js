@@ -110,6 +110,13 @@ var step_before_sell = -1; //random number, just for set in sudden growth min_st
  bitfinex trade_risk = 0.001,  fee = 0.2; 0.898728516, trade 672
  bitfinex trade_risk = 0.005,  fee = 0.2; 1.1501926111680123, trade: 400
  */
+var router = express();
+var server = http.createServer(router);
+server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
+    var addr = server.address();
+    console.log("Chat server listening at", addr.address + ":" + addr.port);
+});
+
 
 function http_request(headers_params, cb, params) {
     console.log(headers_params)

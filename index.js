@@ -157,6 +157,7 @@ function save_quote(subfolder, range) {
 }
 
 function save_live_quote(subfolder, range) {
+    return
     if (!range) {
         range = ""
     }

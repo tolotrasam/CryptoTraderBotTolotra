@@ -142,7 +142,7 @@ setInterval(function() {
     http_request({url: url, method: 'GET'}, function (data, params) {
         console.log('PINGING MYSELF SUCCESSFULLY')
         // console.log(data.trades[0], params)
-    }, params)
+    }, '')
 }, 300000); // every 5 minutes (300000)
 
 function http_request(headers_params, cb, params) {

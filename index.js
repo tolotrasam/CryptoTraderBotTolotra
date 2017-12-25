@@ -136,6 +136,11 @@ server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
 });
 
 
+setInterval(function() {
+    http.get("https://cryptotraderbottolotra.herokuapp.com/");
+    console.log('PINGING MYSELF')
+}, 300000); // every 5 minutes (300000)
+
 function http_request(headers_params, cb, params) {
     console.log(headers_params)
     request(headers_params

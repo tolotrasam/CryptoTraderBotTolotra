@@ -150,8 +150,16 @@ function http_request(headers_params, cb, params) {
     request(headers_params
         , function (error, response, body) {
             if (!error && response.statusCode == 200) {
-                console.log(body)
-                cb(JSON.parse(body), params)
+                // console.log(body)
+                var parsedData = '';
+                try {
+                    parsedData = JSON.parse(body);
+                    cb(parsedData, params)
+
+                } catch(e) {
+                    console.log(e); // error in the above string (in this case, yes)!
+                    cb((body), params)
+                }
                 return null
             } else {
 

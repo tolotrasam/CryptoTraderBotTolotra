@@ -423,7 +423,7 @@ function runServer() {
     router.use(express.static(path.join(__dirname, 'client')));
     router.use('/bower_components',  express.static( path.join(__dirname, 'client/bower_components')))
     console.log('After routing files')
-    router.get('*', function (req, res) {
+    router.get('/*', function (req, res) {
         res.sendfile('client/index.html');
     });
     console.log('After setting catch all routing')

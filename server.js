@@ -409,15 +409,17 @@ function keepPingingMyself() {
 }
 function runServer() {
     console.log('Server+ setup')
+
+    server.listen(process.env.PORT || 3200, process.env.IP || "localhost", function () {
+        var addr = server.address();
+        console.log("Chat server listening at", addr.address + ":" + addr.port);
+    });
     router.use(express.static(path.resolve(__dirname, 'client')));
+
     // router.post('/projects/', projectController.createProject);
     // router.get('/projects/:id', projectController.getProject);
     router.get('*', function (req, res) {
         res.sendfile('client/index.html');
-    });
-    server.listen(process.env.PORT || 3200, process.env.IP || "localhost", function () {
-        var addr = server.address();
-        console.log("Chat server listening at", addr.address + ":" + addr.port);
     });
     setupSocket()
     keepPingingMyself()

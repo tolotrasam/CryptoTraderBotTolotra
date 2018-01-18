@@ -11,6 +11,7 @@
     "angular-daterangepicker": "^0.2.2",
     "angular-sanitize": "^1.6.8",
     "angular-route": "^1.6.8",
+    "angular-animate": "^1.6.8",
     "smDateTimeRangePicker": "^2.0.11",
     "ZingChart-AngularJS": "zingchart-angularjs#^1.2.0"
   }

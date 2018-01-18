@@ -410,7 +410,6 @@ function keepPingingMyself() {
 function runServer() {
     console.log('Server+ setup')
     router.use(express.static(path.resolve(__dirname, 'client')));
-
     // router.post('/projects/', projectController.createProject);
     // router.get('/projects/:id', projectController.getProject);
     router.get('*', function (req, res) {

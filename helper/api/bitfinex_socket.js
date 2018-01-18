@@ -2,8 +2,10 @@
  * Created by Tolotra Samuel on 03/01/2018.
  */
 
-const apiKey = "KJtlQXrE4fJ7hVuzu644jYIwE5Hs6NPq5F2nUQ1gT95";
-const apiSecretKey = "c9Bri2rC4AfMxwxwY7Z2WPhO2Z4n6BI1ce7aVhKG5C5";
+
+
+const apiKey = process.env.BitfinexKey;
+const apiSecretKey = process.env.BitfinexSecret;
 
 var payload = {
     "request": "/v1/account_infos",

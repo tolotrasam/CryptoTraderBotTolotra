@@ -421,7 +421,7 @@ function runServer() {
         console.log("Chat server listening at", addr.address + ":" + addr.port);
     });
     setupSocket()
-    // keepPingingMyself()
+    keepPingingMyself()
 }
 
 //FEATURES

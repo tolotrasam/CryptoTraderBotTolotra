@@ -1,0 +1,1224 @@
+[
+  {
+    "buy": {
+      "time": "2016-12-04 15:35:00",
+      "timestamp": 1480851300000,
+      "price": 764.99,
+      "status": "",
+      "profit": null,
+      "efficiency": 1,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.304592216891724,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-05-28 13:40:00",
+      "timestamp": 1495964400000,
+      "price": 2190.9,
+      "status": "",
+      "profit": 1.8619590060000786,
+      "efficiency": 0.998,
+      "type": "sell",
+      "exposure": 15113100000,
+      "asset_balance": 0,
+      "currency_balance": 2852.514625812102
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-05-28 13:45:00",
+      "timestamp": 1495964700000,
+      "price": 2167.6,
+      "status": "",
+      "profit": 0.008634898899995518,
+      "efficiency": 1.006710261856431,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.3133463722829295,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-06-06 06:30:00",
+      "timestamp": 1496716200000,
+      "price": 2798.2,
+      "status": "",
+      "profit": 0.28892083410223285,
+      "efficiency": 1.0046968413327182,
+      "type": "sell",
+      "exposure": 751500000,
+      "asset_balance": 0,
+      "currency_balance": 3667.6558072842486
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-06-06 06:35:00",
+      "timestamp": 1496716500000,
+      "price": 2780,
+      "status": "",
+      "profit": 0.004504181259380966,
+      "efficiency": 1.0092518043217182,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.316662048802043,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-06-06 06:45:00",
+      "timestamp": 1496717100000,
+      "price": 2825,
+      "status": "",
+      "profit": 0.01418705035971223,
+      "efficiency": 1.0072333007130747,
+      "type": "sell",
+      "exposure": 600000,
+      "asset_balance": 0,
+      "currency_balance": 3712.1311472900397
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-06-06 07:30:00",
+      "timestamp": 1496719800000,
+      "price": 2780.4,
+      "status": "",
+      "profit": 0.013787610619468994,
+      "efficiency": 1.021343406116173,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.3324366583928426,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-07-21 02:50:00",
+      "timestamp": 1500591000000,
+      "price": 2819,
+      "status": "",
+      "profit": 0.011882894547547082,
+      "efficiency": 1.0193007193039405,
+      "type": "sell",
+      "exposure": 3871200000,
+      "asset_balance": 0,
+      "currency_balance": 3748.6266621294044
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-07-21 03:20:00",
+      "timestamp": 1500592800000,
+      "price": 2742,
+      "status": "",
+      "profit": 0.025314650585313944,
+      "efficiency": 1.0458285595413468,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.364379798980724,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-07-21 03:25:00",
+      "timestamp": 1500593100000,
+      "price": 2815.5,
+      "status": "",
+      "profit": 0.02480525164113786,
+      "efficiency": 1.043736902422264,
+      "type": "sell",
+      "exposure": 300000,
+      "asset_balance": 0,
+      "currency_balance": 3833.728501382168
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-07-21 03:30:00",
+      "timestamp": 1500593400000,
+      "price": 2766.2,
+      "status": "",
+      "profit": 0.015510211330136808,
+      "efficiency": 1.060213999809249,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.3831469323907901,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-07-21 03:35:00",
+      "timestamp": 1500593700000,
+      "price": 2809.4,
+      "status": "",
+      "profit": 0.013617092039621241,
+      "efficiency": 1.0580935718096305,
+      "type": "sell",
+      "exposure": 300000,
+      "asset_balance": 0,
+      "currency_balance": 3878.041365874968
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-07-21 03:40:00",
+      "timestamp": 1500594000000,
+      "price": 2785.6,
+      "status": "",
+      "profit": 0.006471559763650665,
+      "efficiency": 1.0649995923609605,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.389390179186968,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-07-21 03:55:00",
+      "timestamp": 1500594900000,
+      "price": 2865.1,
+      "status": "",
+      "profit": 0.026539632395175185,
+      "efficiency": 1.0628695931762386,
+      "type": "sell",
+      "exposure": 900000,
+      "asset_balance": 0,
+      "currency_balance": 3972.780318783805
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-07-21 04:00:00",
+      "timestamp": 1500595200000,
+      "price": 2835.5,
+      "status": "",
+      "profit": 0.008331227531325227,
+      "efficiency": 1.0718170396989677,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.3982841679232012,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-08-05 07:15:00",
+      "timestamp": 1501902900000,
+      "price": 3135.6,
+      "status": "",
+      "profit": 0.10383671310174569,
+      "efficiency": 1.0696734056195696,
+      "type": "sell",
+      "exposure": 1307700000,
+      "asset_balance": 0,
+      "currency_balance": 4375.69091726611
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-08-05 07:20:00",
+      "timestamp": 1501903200000,
+      "price": 3100,
+      "status": "",
+      "profit": 0.009353488965429235,
+      "efficiency": 1.0797934821933552,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.4086901727198637,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-08-05 07:25:00",
+      "timestamp": 1501903500000,
+      "price": 3146.5,
+      "status": "",
+      "profit": 0.013,
+      "efficiency": 1.0776338952289686,
+      "type": "sell",
+      "exposure": 300000,
+      "asset_balance": 0,
+      "currency_balance": 4423.578741206125
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-08-05 07:30:00",
+      "timestamp": 1501903800000,
+      "price": 3099.9,
+      "status": "",
+      "profit": 0.012810106467503546,
+      "efficiency": 1.09164602123787,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.424152902907743,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-08-05 07:35:00",
+      "timestamp": 1501904100000,
+      "price": 3180,
+      "status": "",
+      "profit": 0.023839543211071297,
+      "efficiency": 1.0894627291953944,
+      "type": "sell",
+      "exposure": 300000,
+      "asset_balance": 0,
+      "currency_balance": 4519.74861878413
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-08-05 07:40:00",
+      "timestamp": 1501904400000,
+      "price": 3143.4,
+      "status": "",
+      "profit": 0.009509433962264122,
+      "efficiency": 1.0999435311712387,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.4349777697863975,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-08-05 08:30:00",
+      "timestamp": 1501907400000,
+      "price": 3240,
+      "status": "",
+      "profit": 0.028731055544951298,
+      "efficiency": 1.0977436441088961,
+      "type": "sell",
+      "exposure": 3000000,
+      "asset_balance": 0,
+      "currency_balance": 4640.029318159712
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-08-05 08:35:00",
+      "timestamp": 1501907700000,
+      "price": 3179.9,
+      "status": "",
+      "profit": 0.016549382716049353,
+      "efficiency": 1.1162539790870776,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.4562562531914187,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-08-05 13:15:00",
+      "timestamp": 1501924500000,
+      "price": 3219.1,
+      "status": "",
+      "profit": 0.01032743168024146,
+      "efficiency": 1.1140214711289034,
+      "type": "sell",
+      "exposure": 16800000,
+      "asset_balance": 0,
+      "currency_balance": 4678.458835639199
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-08-05 13:45:00",
+      "timestamp": 1501926300000,
+      "price": 3200.7,
+      "status": "",
+      "profit": 0.0037158833214252715,
+      "efficiency": 1.1181848422768865,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.4587752422807263,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-08-05 21:45:00",
+      "timestamp": 1501955100000,
+      "price": 3331.3,
+      "status": "",
+      "profit": 0.038803574218139895,
+      "efficiency": 1.1159484725923328,
+      "type": "sell",
+      "exposure": 28800000,
+      "asset_balance": 0,
+      "currency_balance": 4849.898728680564
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-08-05 21:50:00",
+      "timestamp": 1501955400000,
+      "price": 3296.5,
+      "status": "",
+      "profit": 0.008446372287095182,
+      "efficiency": 1.1254736928419065,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.468284219997938,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-09-15 18:50:00",
+      "timestamp": 1505487000000,
+      "price": 3625.9,
+      "status": "",
+      "profit": 0.0979241619899894,
+      "efficiency": 1.1232227454562227,
+      "type": "sell",
+      "exposure": 3531600000,
+      "asset_balance": 0,
+      "currency_balance": 5313.2040497839425
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-09-15 19:00:00",
+      "timestamp": 1505487600000,
+      "price": 3532.6,
+      "status": "",
+      "profit": 0.023731542513582886,
+      "efficiency": 1.150582564129598,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5010410580547966,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-09-15 19:30:00",
+      "timestamp": 1505489400000,
+      "price": 3640,
+      "status": "",
+      "profit": 0.02840253637547418,
+      "efficiency": 1.1482813990013387,
+      "type": "sell",
+      "exposure": 1800000,
+      "asset_balance": 0,
+      "currency_balance": 5452.861872416821
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-09-15 19:35:00",
+      "timestamp": 1505489700000,
+      "price": 3592.9,
+      "status": "",
+      "profit": 0.010939560439560415,
+      "efficiency": 1.1610077663670417,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5146416957532878,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-09-15 19:45:00",
+      "timestamp": 1505490300000,
+      "price": 3642,
+      "status": "",
+      "profit": 0.011665840964123663,
+      "efficiency": 1.1586857508343076,
+      "type": "sell",
+      "exposure": 600000,
+      "asset_balance": 0,
+      "currency_balance": 5505.292405821607
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-09-15 20:20:00",
+      "timestamp": 1505492400000,
+      "price": 3615.9,
+      "status": "",
+      "profit": 0.005166392092256977,
+      "efficiency": 1.1647151850243287,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5194783652783437,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-09-15 23:10:00",
+      "timestamp": 1505502600000,
+      "price": 3660.9,
+      "status": "",
+      "profit": 0.010445034431261926,
+      "efficiency": 1.1623857546542802,
+      "type": "sell",
+      "exposure": 10200000,
+      "asset_balance": 0,
+      "currency_balance": 5551.533030752594
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-09-15 23:15:00",
+      "timestamp": 1505502900000,
+      "price": 3638.6,
+      "status": "",
+      "profit": 0.004091398290038018,
+      "efficiency": 1.167170684657678,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5226817909885915,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-09-15 23:30:00",
+      "timestamp": 1505503800000,
+      "price": 3711.8,
+      "status": "",
+      "profit": 0.018117627658989797,
+      "efficiency": 1.1648363432883626,
+      "type": "sell",
+      "exposure": 900000,
+      "asset_balance": 0,
+      "currency_balance": 5640.586491247871
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-09-15 23:55:00",
+      "timestamp": 1505505300000,
+      "price": 3672,
+      "status": "",
+      "profit": 0.008722560482784681,
+      "efficiency": 1.175106824602317,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5330352173925312,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-09-16 00:50:00",
+      "timestamp": 1505508600000,
+      "price": 3722.7,
+      "status": "",
+      "profit": 0.011807189542483611,
+      "efficiency": 1.1727566109531125,
+      "type": "sell",
+      "exposure": 3300000,
+      "asset_balance": 0,
+      "currency_balance": 5695.616143379601
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-09-16 00:55:00",
+      "timestamp": 1505508900000,
+      "price": 3705.4,
+      "status": "",
+      "profit": 0.0026471646922931547,
+      "efficiency": 1.1758755852334326,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5340381365285374,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-09-16 01:05:00",
+      "timestamp": 1505509500000,
+      "price": 3751.3,
+      "status": "",
+      "profit": 0.010387326604415202,
+      "efficiency": 1.1735238340629657,
+      "type": "sell",
+      "exposure": 600000,
+      "asset_balance": 0,
+      "currency_balance": 5743.127987036383
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-09-16 01:10:00",
+      "timestamp": 1505509800000,
+      "price": 3733,
+      "status": "",
+      "profit": 0.002878308852931032,
+      "efficiency": 1.1769181566576379,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5353982670941093,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-09-16 01:20:00",
+      "timestamp": 1505510400000,
+      "price": 3792.4,
+      "status": "",
+      "profit": 0.01391213501205467,
+      "efficiency": 1.1745643203443226,
+      "type": "sell",
+      "exposure": 600000,
+      "asset_balance": 0,
+      "currency_balance": 5811.198699351445
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-09-16 01:40:00",
+      "timestamp": 1505511600000,
+      "price": 3766.5,
+      "status": "",
+      "profit": 0.004829448370425085,
+      "efficiency": 1.1802758245099858,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.53977865444119,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-09-16 09:10:00",
+      "timestamp": 1505538600000,
+      "price": 3843.9,
+      "status": "",
+      "profit": 0.018549581839904447,
+      "efficiency": 1.1779152728609659,
+      "type": "sell",
+      "exposure": 27000000,
+      "asset_balance": 0,
+      "currency_balance": 5906.917659466877
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-09-16 09:50:00",
+      "timestamp": 1505541000000,
+      "price": 3824.4,
+      "status": "",
+      "profit": 0.003072972762038555,
+      "efficiency": 1.1815534306860074,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5414454095146803,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-10-13 06:30:00",
+      "timestamp": 1507861800000,
+      "price": 5715,
+      "status": "",
+      "profit": 0.4923520552243489,
+      "efficiency": 1.179190323824635,
+      "type": "sell",
+      "exposure": 2320800000,
+      "asset_balance": 0,
+      "currency_balance": 8791.741794345644
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-10-13 06:55:00",
+      "timestamp": 1507863300000,
+      "price": 5660.2,
+      "status": "",
+      "profit": 0.007588801399825054,
+      "efficiency": 1.1882256024975222,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.550149872929747,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-10-13 07:45:00",
+      "timestamp": 1507866300000,
+      "price": 5757,
+      "status": "",
+      "profit": 0.015101869191901379,
+      "efficiency": 1.185849151292527,
+      "type": "sell",
+      "exposure": 3000000,
+      "asset_balance": 0,
+      "currency_balance": 8906.36439281964
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-10-13 07:50:00",
+      "timestamp": 1507866600000,
+      "price": 5720,
+      "status": "",
+      "profit": 0.004426958485322216,
+      "efficiency": 1.1911328141369049,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5539425986073427,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-10-13 08:05:00",
+      "timestamp": 1507867500000,
+      "price": 5809.7,
+      "status": "",
+      "profit": 0.013681818181818151,
+      "efficiency": 1.1887505485086312,
+      "type": "sell",
+      "exposure": 900000,
+      "asset_balance": 0,
+      "currency_balance": 9009.884434498821
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-10-13 08:20:00",
+      "timestamp": 1507868400000,
+      "price": 5767,
+      "status": "",
+      "profit": 0.005349777096924078,
+      "efficiency": 1.1951571863269037,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5591927632442906,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-11-13 17:25:00",
+      "timestamp": 1510579500000,
+      "price": 6661.9,
+      "status": "",
+      "profit": 0.153176001387203,
+      "efficiency": 1.1927668719542497,
+      "type": "sell",
+      "exposure": 2711100000,
+      "asset_balance": 0,
+      "currency_balance": 10366.411896918224
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-11-13 17:30:00",
+      "timestamp": 1510579800000,
+      "price": 6629.5,
+      "status": "",
+      "profit": 0.0028634773863311725,
+      "efficiency": 1.1961990251185568,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.5605519380231372,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-11-29 09:30:00",
+      "timestamp": 1511933400000,
+      "price": 10870,
+      "status": "",
+      "profit": 0.6376409985670111,
+      "efficiency": 1.1938066270683199,
+      "type": "sell",
+      "exposure": 1353600000,
+      "asset_balance": 0,
+      "currency_balance": 16929.27316717888
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-11-29 09:35:00",
+      "timestamp": 1511933700000,
+      "price": 10416,
+      "status": "",
+      "profit": 0.039766329346826126,
+      "efficiency": 1.2433491436405693,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.622063615672477,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-11-29 17:55:00",
+      "timestamp": 1511963700000,
+      "price": 11182,
+      "status": "",
+      "profit": 0.07154070660522273,
+      "efficiency": 1.240862445353288,
+      "type": "sell",
+      "exposure": 30000000,
+      "asset_balance": 0,
+      "currency_balance": 18101.639519748736
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-11-29 18:25:00",
+      "timestamp": 1511965500000,
+      "price": 11134,
+      "status": "",
+      "profit": 0.002292613128241817,
+      "efficiency": 1.2437195272330326,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.622546815224469,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 04:05:00",
+      "timestamp": 1512605100000,
+      "price": 13695,
+      "status": "",
+      "profit": 0.228016166696605,
+      "efficiency": 1.2412320881785666,
+      "type": "sell",
+      "exposure": 639600000,
+      "asset_balance": 0,
+      "currency_balance": 22176.337077230106
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 05:00:00",
+      "timestamp": 1512608400000,
+      "price": 13550.89344086,
+      "status": "",
+      "profit": 0.008522567297553863,
+      "efficiency": 1.251923068744433,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.6332490916311901,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 05:05:00",
+      "timestamp": 1512608700000,
+      "price": 13820,
+      "status": "",
+      "profit": 0.017858953235405373,
+      "efficiency": 1.249419222606944,
+      "type": "sell",
+      "exposure": 300000,
+      "asset_balance": 0,
+      "currency_balance": 22526.35944145036
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 05:10:00",
+      "timestamp": 1512609000000,
+      "price": 13749,
+      "status": "",
+      "profit": 0.003137481910274964,
+      "efficiency": 1.2533594958989827,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.6351230433171475,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 05:30:00",
+      "timestamp": 1512610200000,
+      "price": 13947,
+      "status": "",
+      "profit": 0.012401047348898101,
+      "efficiency": 1.2508527769071847,
+      "type": "sell",
+      "exposure": 1200000,
+      "asset_balance": 0,
+      "currency_balance": 22759.45096297397
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 05:40:00",
+      "timestamp": 1512610800000,
+      "price": 13835,
+      "status": "",
+      "profit": 0.006030400803040081,
+      "efficiency": 1.2584569853390284,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.641773188366319,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 09:00:00",
+      "timestamp": 1512622800000,
+      "price": 14088,
+      "status": "",
+      "profit": 0.01628695337911095,
+      "efficiency": 1.2559400713683502,
+      "type": "sell",
+      "exposure": 12000000,
+      "asset_balance": 0,
+      "currency_balance": 23083.04207634929
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 09:15:00",
+      "timestamp": 1512623700000,
+      "price": 14011,
+      "status": "",
+      "profit": 0.0034656445201590004,
+      "efficiency": 1.2603166339295158,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.6441992714436224,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 12:20:00",
+      "timestamp": 1512634800000,
+      "price": 14337,
+      "status": "",
+      "profit": 0.021267432731425312,
+      "efficiency": 1.2577960006616566,
+      "type": "sell",
+      "exposure": 11100000,
+      "asset_balance": 0,
+      "currency_balance": 23525.739184777838
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 12:40:00",
+      "timestamp": 1512636000000,
+      "price": 14240,
+      "status": "",
+      "profit": 0.004765711097161191,
+      "efficiency": 1.263831124927191,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.6487842490455256,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 14:35:00",
+      "timestamp": 1512642900000,
+      "price": 14523,
+      "status": "",
+      "profit": 0.017873595505617977,
+      "efficiency": 1.2613034626773365,
+      "type": "sell",
+      "exposure": 6900000,
+      "asset_balance": 0,
+      "currency_balance": 23897.40306159039
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 15:10:00",
+      "timestamp": 1512645000000,
+      "price": 14171,
+      "status": "",
+      "profit": 0.02223741651174,
+      "efficiency": 1.290048293563336,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.682986963197178,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 17:10:00",
+      "timestamp": 1512652200000,
+      "price": 14717,
+      "status": "",
+      "profit": 0.03652939100980876,
+      "efficiency": 1.2874681969762094,
+      "type": "sell",
+      "exposure": 7200000,
+      "asset_balance": 0,
+      "currency_balance": 24718.982099098124
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 17:35:00",
+      "timestamp": 1512653700000,
+      "price": 14639,
+      "status": "",
+      "profit": 0.0032999932051369163,
+      "efficiency": 1.2917394710013712,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.6851932601202217,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 18:05:00",
+      "timestamp": 1512655500000,
+      "price": 14844,
+      "status": "",
+      "profit": 0.012003688776555776,
+      "efficiency": 1.2891559920593685,
+      "type": "sell",
+      "exposure": 1800000,
+      "asset_balance": 0,
+      "currency_balance": 24964.978735718123
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 21:20:00",
+      "timestamp": 1512667200000,
+      "price": 14630,
+      "status": "",
+      "profit": 0.01241659929938022,
+      "efficiency": 1.3053970665097065,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.7030108529218515,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 21:50:00",
+      "timestamp": 1512669000000,
+      "price": 15481,
+      "status": "",
+      "profit": 0.05616814764183185,
+      "efficiency": 1.302786272376687,
+      "type": "sell",
+      "exposure": 1800000,
+      "asset_balance": 0,
+      "currency_balance": 26311.582392055014
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 21:55:00",
+      "timestamp": 1512669300000,
+      "price": 15415.25794495,
+      "status": "",
+      "profit": 0.0022466284510044045,
+      "efficiency": 1.3057256314476449,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.7034394961826294,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 22:05:00",
+      "timestamp": 1512669900000,
+      "price": 15651,
+      "status": "",
+      "profit": 0.013292773944611655,
+      "efficiency": 1.3031141801847494,
+      "type": "sell",
+      "exposure": 600000,
+      "asset_balance": 0,
+      "currency_balance": 26607.210491644822
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 22:10:00",
+      "timestamp": 1512670200000,
+      "price": 15569.78003228,
+      "status": "",
+      "profit": 0.003189442701424865,
+      "efficiency": 1.307292069111059,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.7054830585665655,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-07 22:45:00",
+      "timestamp": 1512672300000,
+      "price": 15757,
+      "status": "",
+      "profit": 0.010024573714711918,
+      "efficiency": 1.3046774849728369,
+      "type": "sell",
+      "exposure": 2100000,
+      "asset_balance": 0,
+      "currency_balance": 26819.549960725704
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-07 22:55:00",
+      "timestamp": 1512672900000,
+      "price": 15620,
+      "status": "",
+      "profit": 0.006694548454655074,
+      "efficiency": 1.3134883178268602,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.713566636415125,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-08 01:20:00",
+      "timestamp": 1512681600000,
+      "price": 15849,
+      "status": "",
+      "profit": 0.012660691421254802,
+      "efficiency": 1.3108613411912065,
+      "type": "sell",
+      "exposure": 8700000,
+      "asset_balance": 0,
+      "currency_balance": 27104.00098530223
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-08 01:50:00",
+      "timestamp": 1512683400000,
+      "price": 15785,
+      "status": "",
+      "profit": 0.002038109659915452,
+      "efficiency": 1.3135438526288472,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.713639086685564,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-08 02:05:00",
+      "timestamp": 1512684300000,
+      "price": 16038,
+      "status": "",
+      "profit": 0.014027874564459931,
+      "efficiency": 1.3109167649235896,
+      "type": "sell",
+      "exposure": 900000,
+      "asset_balance": 0,
+      "currency_balance": 27428.37698491855
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-08 07:15:00",
+      "timestamp": 1512702900000,
+      "price": 15850,
+      "status": "",
+      "profit": 0.009722159870308018,
+      "efficiency": 1.3238128775831446,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.727035976716007,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-11 06:25:00",
+      "timestamp": 1512959100000,
+      "price": 16059,
+      "status": "",
+      "profit": 0.011186119873817034,
+      "efficiency": 1.3211652518279782,
+      "type": "sell",
+      "exposure": 256200000,
+      "asset_balance": 0,
+      "currency_balance": 27679.001808582194
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-11 06:35:00",
+      "timestamp": 1512959700000,
+      "price": 15987,
+      "status": "",
+      "profit": 0.0024834672146459924,
+      "efficiency": 1.324461099239838,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.72788164164415,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-11 07:00:00",
+      "timestamp": 1512961200000,
+      "price": 16219,
+      "status": "",
+      "profit": 0.012511790830049415,
+      "efficiency": 1.3218121770413582,
+      "type": "sell",
+      "exposure": 1500000,
+      "asset_balance": 0,
+      "currency_balance": 27968.463321134815
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-11 07:45:00",
+      "timestamp": 1512963900000,
+      "price": 15950,
+      "status": "",
+      "profit": 0.014585486158209508,
+      "efficiency": 1.3414165991244467,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.750001654827119,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-11 07:50:00",
+      "timestamp": 1512964200000,
+      "price": 16259,
+      "status": "",
+      "profit": 0.017373040752351097,
+      "efficiency": 1.3387337659261977,
+      "type": "sell",
+      "exposure": 300000,
+      "asset_balance": 0,
+      "currency_balance": 28396.37035202246
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-11 07:55:00",
+      "timestamp": 1512964500000,
+      "price": 16165,
+      "status": "",
+      "profit": 0.0037814133710560305,
+      "efficiency": 1.343825509161377,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.753144300112491,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-11 08:00:00",
+      "timestamp": 1512964800000,
+      "price": 16420,
+      "status": "",
+      "profit": 0.013774822146613052,
+      "efficiency": 1.3411378581430542,
+      "type": "sell",
+      "exposure": 300000,
+      "asset_balance": 0,
+      "currency_balance": 28729.056149031407
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-11 08:05:00",
+      "timestamp": 1512965100000,
+      "price": 16315,
+      "status": "",
+      "profit": 0.004394640682095006,
+      "efficiency": 1.347069608547198,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.757376526922056,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-11 10:45:00",
+      "timestamp": 1512974700000,
+      "price": 16590,
+      "status": "",
+      "profit": 0.01485565430585351,
+      "efficiency": 1.3443754693301035,
+      "type": "sell",
+      "exposure": 9600000,
+      "asset_balance": 0,
+      "currency_balance": 29096.566828473635
+    }
+  },
+  {
+    "buy": {
+      "time": "2017-12-11 11:05:00",
+      "timestamp": 1512975900000,
+      "price": 16518,
+      "status": "",
+      "profit": 0.00233996383363472,
+      "efficiency": 1.3475349714320164,
+      "type": "buy",
+      "exposure": null,
+      "asset_balance": 1.7579836357196204,
+      "currency_balance": 0
+    },
+    "sell": {
+      "time": "2017-12-11 10:45:00",
+      "timestamp": 1512974700000,
+      "price": 16590,
+      "status": "",
+      "profit": 0.01485565430585351,
+      "efficiency": 1.3443754693301035,
+      "type": "sell",
+      "exposure": 9600000,
+      "asset_balance": 0,
+      "currency_balance": 29096.566828473635
+    }
+  }
+]

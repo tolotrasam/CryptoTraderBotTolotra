@@ -21,6 +21,9 @@ var io = socketio.listen(server);
 var messages = [];
 var sockets = [];
 var liveBots = []
+const PORT = process.env.PORT || 3200;
+const IP =  process.env.IP || "localhost";
+
 function http_request(headers_params, cb, params) {
     console.log(headers_params)
     request(headers_params
@@ -410,18 +413,21 @@ function keepPingingMyself() {
 function runServer() {
     console.log('Server+ setup')
 
-    server.listen(process.env.PORT || 3200, process.env.IP || "localhost", function () {
+    // server.listen(PORT, process.env.IP || "localhost", function ()
+    server.listen(PORT,  () =>{
         var addr = server.address();
         console.log("Chat server listening at", addr.address + ":" + addr.port);
+        console.log(`Our app is running on port ${ PORT }`);
     });
+    console.log('After binding port')
     router.use(express.static(path.resolve(__dirname, 'client')));
-
-    // router.post('/projects/', projectController.createProject);
-    // router.get('/projects/:id', projectController.getProject);
+    console.log('After routing files')
     router.get('*', function (req, res) {
         res.sendfile('client/index.html');
     });
+    console.log('After setting catch all routing')
     setupSocket()
+    console.log('After setting up socket')
     keepPingingMyself()
 }
 

@@ -139,12 +139,12 @@ var letters = [
         isVowel: 0
     }
 ]
-
-sumOfWeights = letters.reduce(function (memo, letter) {
-    return memo + letter.weight;
-}, 0);
-
-console.log(sumOfWeights, 'sum')
+//
+// sumOfWeights = letters.reduce(function (memo, letter) {
+//     return memo + letter.weight;
+// }, 0);
+//
+// console.log(sumOfWeights, 'sum')
 
 function getRandom(sumOfWeights) {
     var random = (Math.random() * (sumOfWeights ));

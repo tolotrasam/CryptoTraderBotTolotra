@@ -1,0 +1,310 @@
+<div ng-init="init()" class="page-header row">
+    <div class="col">
+        <h1>Your bot is {{bot.status.state}}</h1>
+        <div>
+            {{bot.status.msg}}
+        </div>
+    </div>
+    <div class="col">
+
+
+        <div class="input-group">
+                   <span class="input-group-btn">
+                        <button ng-show="showStartNewBtn" ng-click="start_new()" class="btn btn-success" type="button"
+                                tabindex="-1"><span
+                                class="glyphicon glyphicon-remove" aria-hidden="true"></span>START NEW
+                           </button>
+
+                       <span ng-show="show_pause_stop_Btn">
+                           <button ng-click="pause()" class="btn btn-info" type="button" tabindex="-1"><span
+                                   class="glyphicon glyphicon-remove" aria-hidden="true"></span>PAUSE
+                           </button>
+                           <button ng-click="stop()" class="btn btn-danger" type="button" tabindex="-1"><span
+                                   class="glyphicon glyphicon-remove" aria-hidden="true"></span>STOP
+                           </button></span>
+
+                <button ng-hide="hide_start_btn" ng-click="start()" class="btn btn-success" type="button" tabindex="-1">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>START
+                </button>
+                       </span>
+
+            <select ng-model="settings.mode" class="form-control"
+                    ng-options="mode.slug as mode.name for mode in placeholder.mode"
+            >
+            </select>
+
+        </div>
+    </div>
+
+</div>
+<hr>
+<div ng-hide="started" class="container setup">
+
+    <div class="row">
+        <div class="col">
+            <h2>Market:</h2>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                Exchange
+                            </div>
+                            <div class="col">
+                                <select ng-change="checkAvailableData()"
+                                        class="form-control" ng-model="settings.exchanges"
+                                        ng-options="x.slug as x.name for x in placeholder.exchanges">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                Currency:
+                                <select ng-change="checkAvailableData()"
+                                        class="form-control" ng-init="settings.currency = placeholder.currency[0]"
+                                        ng-model="settings.currency"
+                                        ng-options="currency.slug as currency.name for currency in placeholder.currency">
+                                </select>
+                            </div>
+                            <div class="col">
+                                Asset:
+                                <select ng-change="checkAvailableData()"
+                                        class="form-control" ng-model="settings.asset"
+                                        ng-options="asset.slug as asset.name for asset in placeholder.asset">
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                Candle size:
+                            </div>
+                            <div class="col">
+                                <select ng-change="checkAvailableData()" class="form-control"
+                                        ng-model="settings.candle_size"
+                                        ng-options="candle_size.slug as candle_size.name for candle_size in placeholder.candle_size">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+
+                                <h2>Strategy</h2>
+                            </div>
+                            <div class="col"><select
+                                    ng-change="checkAvailableData()" class="form-control"
+                                    ng-model="settings.strategy"
+                                    ng-options="strategy as strategy.name for strategy in placeholder.strategy">
+
+                            </select></div>
+                        </div>
+                        <div class="row">
+
+                            <b>PARAMETERS</b>
+                        </div>
+                        <div class="row">
+                                <textarea json-text ng-model="settings.strategy.parameters" class="form-control" name=""
+                                          id="parameters" rows="5"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">
+                                <button class="btn btn-info float-right" ng-hide="true"> Apply and Lock</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+
+                            <h2>Info</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col"><i><p ng-bind-html="settings.strategy.info">
+                            </p></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <h2>AVAILABLE Data:</h2>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+
+                        <div class="row">
+                            <div class="col">
+                                AVAILABLE SINCE:
+
+                            </div>
+                            <div class="col">
+                                {{data_range.available_since*1000|date : "' MMMM d, yyyy H:mm:ss"}}
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                UNTIL:
+                            </div>
+                            <div class="col">
+                                {{data_range.available_until*1000|date : "' MMMM d, yyyy H:mm:ss"}}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                TIMESPAN:
+                            </div>
+                            <div class="col">
+                                {{(data_range.available_until -
+                                data_range.available_since)*1000|millSecondsToTimeString}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row">
+
+                            <h2>Paper Trader Settings</h2>
+                        </div>
+                        <div class="row">
+                                <textarea json-text class="form-control" name="" id="parameters_view_only"
+                                          ng-model="settings.paper_trader" rows="5"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">
+                                <button class="btn btn-info float-right" ng-hide="true"> Apply and Lock</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="row" ng-show="settings.mode=='Tradebot'">
+        <div class="col">
+            <h2>API ACCOUNT INFO:</h2>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                Fee
+                            </div>
+                            <div class="col">
+                                {{placeholder.fee}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                {{settings.asset}}
+                            </div>
+                            <div class="col">
+                                {{placeholder.balance.asset}}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                {{settings.currency}}
+                            </div>
+                            <div class="col">
+                                {{placeholder.balance.currency}}
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                Current worth:
+                            </div>
+                            <div class="col">
+                                {{placeholder.marketPrice*placeholder.balance.asset}} {{settings.currency}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+    <div class="row" ng-hide="settings.mode=='Tradebot'">
+        <div class="col">
+            <h2>ADJUST RANGE</h2>
+
+            <div class="container">
+                <div class="row">
+                    <div id="reportrange" class="pull-right"
+                         style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                        <span></span> <b class="caret"></b>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="col">
+
+                            <div class="row">
+                                <div class="col">
+                                    SELECTED SINCE:
+
+                                </div>
+                                <div class="col">
+                                    {{settings.available_since*1000|date : "' MMMM d, yyyy H:mm:ss"}}
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    SELECTED UNTIL:
+                                </div>
+                                <div class="col">
+                                    {{settings.available_until*1000|date : "' MMMM d, yyyy H:mm:ss"}}
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    SELECTED TIMESPAN:
+                                </div>
+                                <div class="col">
+                                    {{(settings.available_until -
+                                    settings.available_since)*1000|millSecondsToTimeString}}
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row"></div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+//settings.asset
+//bot.start_asset_balance
+//bot.status.state
+//bot.status.msg
+//bot.start_time
+//bot.current_data_timestamp
+//bot.start_price
+//bot.current_price
+//bot.natural_growth
+//bot.efficiency
+//bot.total_counter_trade
+//bot.current_data_timestamp
+//settings.candle_size
+//settings.strategy.name
+//bot.artificial_growth
+
+{
+  "mode": "backtest",
+  "exchanges": "bitfinex",
+  "currency": "USD",
+  "asset": "BTC",
+  "candle_size": "1m",
+  "strategy": {
+    "name": "PMR",
+    "parameters": {
+      "trade_risk": 0.09,
+      "upper_trade_risk": 0.01,
+      "lower_trade_risk": 0.002
+    },
+    "info": "asdf",
+    "default": true
+  },
+  "paper_trader": {
+    "initial_asset_balance": 1,
+    "initial_currency_balance": 1000,
+    "fee": "0.2"
+  },
+  "available_since": "1480851660",
+  "available_until": "1516130520",
+  "balance": {
+    "asset": "0.00175371",
+    "currency": 0
+  },
+  "fee": "0.2",
+  "marketPrice": "11380.0"
+}

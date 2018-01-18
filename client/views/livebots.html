@@ -1,0 +1,100 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <div class="btn-group pull-right">
+                <a href="startnew" class="btn btn-success active">
+                    <i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i> Start new
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col">
+            <div class="row">
+                <h1>Tradebots</h1>
+            </div>
+            <div class="row">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Nickname</th>
+                        <th>Started on</th>
+                        <th>Life time</th>
+                        <th>Strategy</th>
+                        <th>Candle size</th>
+                        <th>Market</th>
+                        <th>Efficiency</th>
+                        <th>Tradecount</th>
+                        <th>Action</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="bot in tradebots">
+                        <td>{{bot.id}}</td>
+                        <td>{{bot.started}}</td>
+                        <td>{{bot.current_data_timestamp*1000 - bot.from_date*1000 |millSecondsToTimeString}}</td>
+                        <td>{{bot.strategy}}</td>
+                        <td>{{bot.candle_size}}</td>
+                        <td>{{bot.asset}}/{{bot.currency}}</td>
+                        <td>{{bot.efficiency}}</td>
+                        <td>{{bot.total_counter_trade}}</td>
+                        <td>
+                            <a href="monitor/{{bot.id}}" class="btn btn-info">
+                                <i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i>View
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <h1>Paper Traders</h1></div>
+            <div class="row">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Nickname</th>
+                        <th>Started on</th>
+                        <th>Life time</th>
+                        <th>Strategy</th>
+                        <th>Candle size</th>
+                        <th>Market</th>
+                        <th>Efficiency</th>
+                        <th>Tradecount</th>
+                        <th>Action</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr ng-repeat="bot in paper_traders">
+                        <td>{{bot.id}}</td>
+                        <td>{{bot.from_date}}</td>
+                        <td>{{bot.current_data_timestamp*1000 - bot.from_date*1000 |millSecondsToTimeString}}</td>
+                        <td>{{bot.strategy}}</td>
+                        <td>{{bot.candle_size}}</td>
+                        <td>{{bot.asset}}/{{bot.currency}}</td>
+                        <td>{{bot.efficiency}}</td>
+                        <td>{{bot.total_counter_trade}}</td>
+                        <td>
+                            <a href="monitor/{{bot.id}}" class="btn btn-info">
+                                <i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i>View
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>

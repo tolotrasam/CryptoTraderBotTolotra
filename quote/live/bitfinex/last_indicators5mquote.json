@@ -10834,3 +10834,100 @@
     "ma24h": 13162.325654565382,
     "daily_ma24h_growth": -0.06338127576020684
   },
+  {
+    "average_price": 12861,
+    "close_price": 12861,
+    "timestamp": 1514148600000,
+    "min_step_change": -0.003409531189461449,
+    "hourly_growth": 0.06008902077151335,
+    "ma1h": 12579.416666666666,
+    "daily_ma1h_growth": 0.027729689065137536,
+    "daily_growth": -0.12187628021302745,
+    "ma24h": 13155.943710120939,
+    "daily_ma24h_growth": -0.06414595200659126
+  },
+  {
+    "average_price": 12845,
+    "close_price": 12845,
+    "timestamp": 1514148900000,
+    "min_step_change": -0.001244071223077521,
+    "hourly_growth": 0.053041482210198394,
+    "ma1h": 12640.166666666666,
+    "daily_ma1h_growth": 0.03493358637569045,
+    "daily_growth": -0.12797012898845891,
+    "ma24h": 13149.74579345427,
+    "daily_ma24h_growth": -0.0648196793048732
+  },
+  {
+    "average_price": 12868,
+    "close_price": 12868,
+    "timestamp": 1514149200000,
+    "min_step_change": 0.0017905799922148696,
+    "hourly_growth": 0.0410160990211148,
+    "ma1h": 12694.083333333334,
+    "daily_ma1h_growth": 0.040427128940612435,
+    "daily_growth": -0.1300114934757623,
+    "ma24h": 13143.200654565382,
+    "daily_ma24h_growth": -0.0655117605559425
+  },
+  {
+    "average_price": 12731,
+    "close_price": 12731,
+    "timestamp": 1514149500000,
+    "min_step_change": -0.010646565122785204,
+    "hourly_growth": 0.008635715417524956,
+    "ma1h": 12736.333333333334,
+    "daily_ma1h_growth": 0.0429995276884737,
+    "daily_growth": -0.14153742414025625,
+    "ma24h": 13136.52357123205,
+    "daily_ma24h_growth": -0.06625828662705602
+  },
+  {
+    "average_price": 12786,
+    "close_price": 12786,
+    "timestamp": 1514149800000,
+    "min_step_change": 0.004320163380724216,
+    "hourly_growth": 0.008439151352630334,
+    "ma1h": 12745.416666666666,
+    "daily_ma1h_growth": 0.04079575315074136,
+    "daily_growth": -0.14055253075216778,
+    "ma24h": 13129.235376787605,
+    "daily_ma24h_growth": -0.06705678073481797
+  },
+  {
+    "average_price": 12680,
+    "close_price": 12680,
+    "timestamp": 1514150100000,
+    "min_step_change": -0.008290317534803691,
+    "hourly_growth": 0.010358565737051793,
+    "ma1h": 12754.333333333334,
+    "daily_ma1h_growth": 0.03795734291817853,
+    "daily_growth": -0.14950700918908041,
+    "ma24h": 13121.974960120939,
+    "daily_ma24h_growth": -0.0678946654230487
+  },
+  {
+    "average_price": 12549,
+    "close_price": 12549,
+    "timestamp": 1514150400000,
+    "min_step_change": -0.010331230283911672,
+    "hourly_growth": -0.009784581393513769,
+    "ma1h": 12765.166666666666,
+    "daily_ma1h_growth": 0.03526533481117018,
+    "daily_growth": -0.16037735849056603,
+    "ma24h": 13114.235376787605,
+    "daily_ma24h_growth": -0.06877242590781522
+  },
+  {
+    "average_price": 12699,
+    "close_price": 12699,
+    "timestamp": 1514150700000,
+    "min_step_change": 0.011953143676786996,
+    "hourly_growth": -0.008665105386416861,
+    "ma1h": 12754.833333333334,
+    "daily_ma1h_growth": 0.030277329025309687,
+    "daily_growth": -0.14346418454067178,
+    "ma24h": 13105.912460120939,
+    "daily_ma24h_growth": -0.06966666988950518
+  }
+]

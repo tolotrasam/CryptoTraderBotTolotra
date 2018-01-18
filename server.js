@@ -420,7 +420,8 @@ function runServer() {
         console.log(`Our app is running on port ${ PORT }`);
     });
     console.log('After binding port')
-    router.use(express.static(path.resolve(__dirname, 'client')));
+    router.use(express.static(path.join(__dirname, 'client')));
+    router.use('/bower_components',  express.static( path.join(__dirname, '/bower_components')))
     console.log('After routing files')
     router.get('*', function (req, res) {
         res.sendfile('client/index.html');

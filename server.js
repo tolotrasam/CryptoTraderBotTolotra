@@ -421,7 +421,7 @@ function runServer() {
     });
     console.log('After binding port')
     router.use(express.static(path.join(__dirname, 'client')));
-    router.use('/bower_components',  express.static( path.join(__dirname, '/bower_components')))
+    router.use('/bower_components',  express.static( path.join(__dirname, 'client/bower_components')))
     console.log('After routing files')
     router.get('*', function (req, res) {
         res.sendfile('client/index.html');

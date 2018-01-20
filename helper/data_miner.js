@@ -89,7 +89,10 @@ class DataMiner {
 
         console.log('createSqlByTimeRangeAndMarket ' + this.from_date, this.to_date)
         this.getAvailableDataRanges(exchange, currency, asset, candle_size, (err, rangeObj) => {
-            console.log('getAvailableDataRanges Done')
+            if(err){
+                console.log(err)
+            }
+            console.log('getAvailableDataRanges Done', rangeObj)
 
             if (rangeObj.available_since !== 'None' || rangeObj.available_until !== 'None') {
                 if (from_date < rangeObj.available_since) { //First Check before the available data
@@ -452,6 +455,7 @@ class DataMiner {
         var err = null
         var pair = currency + '_' + asset
         var rangeObj = {available_since: 'None', available_until: 'None'}
+        console.log('reading folder', exchangeFolderPath)
         if (!fs.existsSync(exchangeFolderPath)) {
             cb('Error: No data from exchange', rangeObj)
         } else {

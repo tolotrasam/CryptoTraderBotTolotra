@@ -30,8 +30,8 @@ class Tradebot {
         if (settings.currency === undefined) {
             settings.currency = 'USD'
         }
-        if (settings.exchange === undefined) {
-            settings.exchange = 'Bitfinex'
+        if (settings.exchanges === undefined) {
+            settings.exchanges = 'bitfinex'
         }
         if (settings.available_since === undefined) {
             settings.available_since = 1480550400
@@ -43,7 +43,7 @@ class Tradebot {
         this.candle_size = settings.candle_size
         this.asset = settings.asset
         this.currency = settings.currency
-        this.exchange = settings.exchange
+        this.exchange = settings.exchanges
         this.type = 'backtest'
         this.from_date = settings.available_since;
         this.to_date = settings.available_until;
@@ -224,6 +224,7 @@ class Tradebot {
         summary.from_date = this.from_date
         summary.current_data_timestamp = this.cleaned_obj_current_market_data.timestamp / 1000
         summary.start_price = start_price;
+        summary.nickname = this.nickname
 
         summary.roundtrips = this.getRoundTrips()
         summary.total_counter_trade = this.total_counter_trade

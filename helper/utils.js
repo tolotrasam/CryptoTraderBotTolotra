@@ -140,12 +140,6 @@ var letters = [
     }
 ]
 //
-// sumOfWeights = letters.reduce(function (memo, letter) {
-//     return memo + letter.weight;
-// }, 0);
-//
-// console.log(sumOfWeights, 'sum')
-
 function getRandom(sumOfWeights) {
     var random = (Math.random() * (sumOfWeights ));
     // console.log(random)
@@ -156,6 +150,12 @@ function getRandom(sumOfWeights) {
 }
 
 function getNewLetter() {
+
+    var sumOfWeights = letters.reduce(function (memo, letter) {
+        return memo + letter.weight;
+    }, 0);
+
+    console.log(sumOfWeights, 'sum')
 
     var letter = letters.find(getRandom(sumOfWeights));
     return letter;

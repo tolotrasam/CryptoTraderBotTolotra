@@ -401,9 +401,10 @@ function setupSocket() {
     });
 }
 function keepPingingMyself() {
+    var url = "https://cryptotraderbottolotra-tolotrasam.c9users.io/";
+    var url = "https://cryptotraderbottolotra.herokuapp.com/";
     setInterval(function () {
-        console.log('TRYING TO PING MYSELF')
-        var url = "https://cryptotraderbottolotra.herokuapp.com/";
+        console.log('TRYING TO PING MYSELF', url)
         http_request({url: url, method: 'GET'}, function (data, params) {
             console.log('PINGING MYSELF SUCCESSFULLY')
             // console.log(data.trades[0], params)

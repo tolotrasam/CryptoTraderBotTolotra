@@ -203,6 +203,7 @@ function getRandomName(length, howmany, endswithy) {
 
         var result = result.join('')
         console.log(result.toLowerCase())
+        return result.toLowerCase()
     }
 }
 

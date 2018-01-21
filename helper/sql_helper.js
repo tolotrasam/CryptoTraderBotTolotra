@@ -197,8 +197,13 @@ function readAllRows(path, asset, currency, candle_size, from_date, to_date, cb)
 
 function closeDb(db) {
     console.log("closing Db");
-    db.close();
-    console.log("closed Db");
+    // db.close();
+    db.close((err) => {
+        if (err) {
+            console.error(err.message);
+        }
+        console.log("closed Db");
+    });
 }
 
 function runChainExample() {

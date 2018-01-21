@@ -22,7 +22,7 @@ var messages = [];
 var sockets = [];
 var liveBots = []
 const PORT = process.env.PORT || 3200;
-const IP =  process.env.IP || "localhost";
+const IP = process.env.IP || "localhost";
 
 function http_request(headers_params, cb, params) {
     console.log(headers_params)
@@ -275,23 +275,36 @@ function setupSocket() {
             }
         }
 
+        /*
+         var liveBots  =[]
+         liveBots structure
+         liveBots.push({
+         bot: tradebot,
+         id: msg.id,
+         since: new Date().getTime(),
+         subscribers: [{socket: socket, bot: msg.id, active:true}]
+         })
+         */
+
         function broadcastEventToSubscribers(tradebot, event_slug, data) {
             console.log('Broadcast attempt', event_slug)
             for (var n = 0; n < liveBots.length; n++) {
 
                 if (tradebot === liveBots[n].bot) {
-                    liveBots[n].subscribers = liveBots[n].subscribers.filter(function( obj ) {
-                        return !obj.disconnected ;
+                    liveBots[n].subscribers = liveBots[n].subscribers.filter(function (obj) {
+                        return !obj.socket.disconnected;
                     });
                     for (var i = 0; i < liveBots[n].subscribers.length; i++) {
-                        var subSocket = liveBots[n].subscribers[i]
-                        if (subSocket &&  !subSocket.disconnected ) {
-                            subSocket.emit(event_slug, data)
-                            console.log('subscriber ' + (i + 1) + 'out of ', liveBots[n].subscribers.length)
+                        var subSocket = liveBots[n].subscribers[i].socket
+                        if (subSocket && !subSocket.disconnected) {
+                            if (liveBots[n].subscribers[i].active === true) { //checking if the socket is subscribed to listen to this specific bot
+                                subSocket.emit(event_slug, data)
+                                console.log('subscriber ' + (i + 1) + 'out of ', liveBots[n].subscribers.length + ' actives')
+                            }
                         }
                     }
-                    if(event_slug==='stop'){
-                        liveBots.splice(n,1)
+                    if (event_slug === 'stop') { //removing bots from livebots
+                        liveBots.splice(n, 1)
                     }
                     break;
                 }
@@ -335,7 +348,12 @@ function setupSocket() {
             tradebot.on('status', function (data) {
                 broadcastEventToSubscribers(tradebot, 'status', data)
             })
-            liveBots.push({bot: tradebot, id: msg.id, since: new Date().getTime(), subscribers: [socket]})
+            liveBots.push({
+                bot: tradebot,
+                id: msg.id,
+                since: new Date().getTime(),
+                subscribers: [{socket: socket, bot: msg.id, active:true}]
+            })
 
             switch (msg.mode) {
                 case 'tradebot':
@@ -356,21 +374,55 @@ function setupSocket() {
                     break
             }
         })
-        socket.on('getBotSummary', function (id) {
-            console.log('Getting bot summary', id)
-            for (var bot of liveBots) {
-                if (bot.id === id) {
-                    var this_bot = bot.bot
-                    var summary = bot.bot.getBotSummary()
-                    if (bot.subscribers.indexOf(socket) === -1) {
-                        bot.subscribers.push(socket)
+
+        /*
+         var liveBots = []
+         liveBots
+         structure
+         liveBots[{
+         bot: tradebot,
+         id: msg.id,
+         since: new Date().getTime(),
+         subscribers: [{socket: socket, bot: msg.id, active:true}]
+         }, {
+         bot: tradebot,
+         id: msg.id,
+         since: new Date().getTime(),
+         subscribers: [{socket: socket, bot: msg.id, active:true}]
+         }]
+         */
+
+        socket.on('getBotSummary', function (bot_id) {
+
+            console.log('Getting bot summary', bot_id)
+            for (var livebot of liveBots) { //checking if bot id is in live bot
+                if (livebot.id === bot_id) { //if bot element of livebots is requested by the user
+
+                    var socketInSubsList = livebot.subscribers.find(subObj => subObj.socket.id === socket.id)
+                    if (typeof socketInSubsList !== typeof undefined) { //checking if subscriber in array of the requested bot
+                        socketInSubsList.active = true; //just change the bot id
+                    } else { //if subscriber not in array of the requested bot, create new subscriber
+                        var SubscriberObj = {
+                            socket: socket,
+                            bot: bot_id,
+                            active: true,
+                        }
+                        livebot.subscribers.push(SubscriberObj)
                     }
+                    var bot_requested = livebot.bot
+                    var summary = bot_requested.getBotSummary()
+
                     socket.emit('getBotSummary', summary)
-                    this_bot.getAllPastChartData(function (data) {
+                    bot_requested.getAllPastChartData(function (data) {
                         socket.emit('allChartData', data);
                         // broadcastEventToSubscribers(this_bot,'allChartData', data)
                     })
-                    break
+                }else{
+                    //for every other livebot in livebots, find if the socket is in livebot subscribers and turn it inactive
+                    var socketInSubsList = livebot.subscribers.find(subObj => subObj.socket.id === socket.id)
+                    if (typeof socketInSubsList !== typeof undefined) { //checking if subscriber in array of the requested bot
+                        socketInSubsList.active = false; //just change the bot id
+                    }
                 }
             }
         })
@@ -415,14 +467,14 @@ function runServer() {
     console.log('Server+ setup')
 
     // server.listen(PORT, process.env.IP || "localhost", function ()
-    server.listen(PORT,  () =>{
+    server.listen(PORT, () => {
         var addr = server.address();
         console.log("Chat server listening at", addr.address + ":" + addr.port);
         console.log(`Our app is running on port ${ PORT }`);
     });
     console.log('After binding port')
     router.use(express.static(path.join(__dirname, 'client')));
-    router.use('/bower_components',  express.static( path.join(__dirname, 'client/bower_components')))
+    router.use('/bower_components', express.static(path.join(__dirname, 'client/bower_components')))
     console.log('After routing files')
     router.get('/*', function (req, res) {
         res.sendfile('client/index.html');

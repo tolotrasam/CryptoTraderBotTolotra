@@ -42,6 +42,7 @@ class Tradebot {
         this.settings = settings
         this.candle_size = settings.candle_size
         this.asset = settings.asset
+        this.id = settings.id
         this.currency = settings.currency
         this.exchange = settings.exchanges
         this.type = 'backtest'
@@ -906,6 +907,7 @@ class Tradebot {
 
     getLastCandleUpdate() {
         var obj = {
+            id:this.id,
             current_data_timestamp: this.cleaned_obj_current_market_data.timestamp / 1000,
             timespan: this.getTimeSpan(),
             current_price: this.cleaned_obj_current_market_data.close_price,

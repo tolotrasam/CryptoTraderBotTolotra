@@ -77,7 +77,7 @@
 
                     <tr ng-repeat="bot in paper_traders">
                         <td>{{bot.id}}</td>
-                        <td>{{bot.from_date}}</td>
+                        <td>{{bot.from_date *1000 |date : "' MMMM d, yyyy H:mm:ss"}}</td>
                         <td>{{bot.current_data_timestamp*1000 - bot.from_date*1000 |millSecondsToTimeString}}</td>
                         <td>{{bot.strategy}}</td>
                         <td>{{bot.candle_size}}</td>

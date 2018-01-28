@@ -254,7 +254,8 @@ class Tradebot {
     }
 
     getNickName() {
-        return utils.getRandomName(6, 1)
+        var nickname =  utils.getRandomName(6, 1)
+        return nickname
     }
 
     getThisRangeinMinute() {
